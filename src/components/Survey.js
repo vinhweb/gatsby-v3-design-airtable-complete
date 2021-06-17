@@ -33,9 +33,14 @@ const Survey = () => {
       }
     })
 
+    console.log(tempItems)
+
     const records = await base('Survey')
       .update(tempItems)
       .catch(err => console.log(err))
+
+    console.log(records)
+
     const newItems = records.map(record => {
       const { id, fields } = record
       return { id, fields }

@@ -35,6 +35,7 @@ const Search = () => {
       >
         <SearchBox />
         <Container className="section-center">
+          <Hits />
           <NewHits />
         </Container>
       </InstantSearch>
